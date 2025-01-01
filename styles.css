@@ -1,0 +1,55 @@
+/*
+
+This CSS file will be included with your plugin, and
+available in the app when your plugin is enabled.
+
+If your plugin does not need CSS, delete this file.
+
+*/
+
+#cft-tags-container {
+}
+
+/*----*/
+
+.cft-tag {
+    display: inline-flex;
+    cursor: pointer;
+    margin: var(--size-2-1);
+}
+
+/*----*/
+
+.cft-tag-files {
+    padding: var(--size-4-2);
+    margin-top: var(--size-4-5);
+
+    background-color: var(--background-secondary-alt);
+    border-radius: var(--size-4-3);
+}
+
+.cft-info {
+    color: var(--text-muted);
+    font-size: var(--font-ui-small);
+    font-weight: var(--font-normal);
+}
+
+.cft-files-container {
+    margin: var(--size-4-2) 0 var(--size-4-2) 0;
+}
+
+.cft-file {
+    cursor: pointer;
+    margin: var(--size-4-1);
+    color: var(--link-color);
+    text-decoration: var(--link-decoration);
+    text-decoration-thickness: var(--link-decoration-thickness);
+
+    font-size: var(--font-ui-small);
+    font-weight: var(--link-weight);
+}
+
+.cft-file:hover {
+    color: var(--link-color-hover);
+    text-decoration: var(--link-decoration-hover);
+}

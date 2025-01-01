@@ -1,0 +1,15 @@
+{
+	"id": "current-file-tags",
+	"name": "Current File Tags",
+	"version": "1.0.0",
+	"minAppVersion": "1.7",
+	"description": "Display the active Markdown file's tags and associated files.",
+	"author": "Trung Tran",
+	"authorUrl": "https://github.com/trung-tran-swe",
+	"isDesktopOnly": false,
+    "fundingUrl": {
+        "GitHub Sponsor": "https://github.com/sponsors/trung-tran-swe",
+        "Buy Me a Coffee": "https://buymeacoffee.com/trung.tran.swe",
+        "PayPal": "https://www.paypal.com/paypalme/ttran7977"
+    }
+}
