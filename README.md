@@ -29,5 +29,7 @@ This plugin is developed by [Trung Tran](https://github.com/trung-tran-swe) , an
 If you are in MA, I would love to meet up for a (free?) cup of coffee. If you wish to support virtually, please check out:
 
 [![GitHub Sponsors](https://img.shields.io/github/sponsors/trung-tran-swe?style=social)](https://github.com/sponsors/trung-tran-swe)
+
 [<img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="BuyMeACoffee" width="100">](https://buymeacoffee.com/trung.tran.swe)
+
 [![Paypal](https://img.shields.io/badge/paypal-ttran7977-yellow?style=social&logo=paypal)](https://www.paypal.com/paypalme/ttran7977)
