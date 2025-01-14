@@ -1,5 +1,5 @@
-import {Plugin, WorkspaceLeaf} from 'obsidian';
-import {MAIN_VIEW, MainView} from "./main-view";
+import {Plugin, WorkspaceLeaf} from "obsidian";
+import {MAIN_VIEW, MainView, NAME_TAG} from "./main-view";
 
 /**
  * A simple Obsidian plugin that:
@@ -12,7 +12,7 @@ export default class CurrentFileTagsPlugin extends Plugin {
     async onload() {
         this.registerView(MAIN_VIEW, (leaf) => new MainView(leaf, this));
 
-        this.addRibbonIcon('tag', 'Current File Tags', () => this.activateView());
+        this.addRibbonIcon("tag", NAME_TAG, () => this.activateView());
     }
 
     async activateView() {

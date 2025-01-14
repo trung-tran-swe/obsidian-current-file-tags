@@ -17,7 +17,7 @@ function Tag(
 
     return (
         <div key={tag}
-             title="Ctrl+Click to search. Click to list files."
+             title="Ctrl + Click to search. Click to list files."
              className="cft-tag"
              onClick={(e) => onSearchTag(e, tag)}
         >

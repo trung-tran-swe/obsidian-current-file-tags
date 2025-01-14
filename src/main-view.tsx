@@ -1,12 +1,13 @@
 import {CachedMetadata, IconName, ItemView, TAbstractFile, TFile, WorkspaceLeaf} from "obsidian";
 import {StrictMode} from "react";
-import {createRoot, Root} from 'react-dom/client';
+import {createRoot, Root} from "react-dom/client";
 
 import CurrentFileTagsPlugin from "./main";
 import FileTags from "./file-tags";
 
 
-export const MAIN_VIEW = 'current-file-tags-view';
+export const NAME_TAG = "Current file tags";
+export const MAIN_VIEW = "current-file-tags-view";
 export const MARKDOWN_EDITOR_VIEW = "markdown";
 
 
@@ -141,7 +142,7 @@ export class MainView extends ItemView {
     }
 
     getDisplayText() {
-        return 'Current File Tags';
+        return NAME_TAG;
     }
 
     getIcon(): IconName {
