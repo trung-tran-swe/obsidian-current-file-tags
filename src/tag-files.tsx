@@ -6,7 +6,7 @@ import {MARKDOWN_EDITOR_VIEW} from "./main-view";
 /**
  * Render the files containing the tag.
  * - param app The Obsidian App.
- * - param tag The tag to find files containing it.
+ * - param tag The tag, without the #, to find files containing it.
  * @constructor
  */
 function TagFiles(
@@ -36,7 +36,7 @@ function TagFiles(
         const cache = app.metadataCache.getFileCache(file);
         if (cache) {
             // Get all tags from cache and frontmatter.tags
-            const tagsSet = new Set(cache?.tags?.map(a => a.tag));
+            const tagsSet = new Set(cache?.tags?.map(a => a.tag.substring(1)));
             cache?.frontmatter?.tags.forEach((tag: string) => {
                 tagsSet.add(tag);
             })
@@ -70,7 +70,7 @@ function TagFiles(
     return (
         <div className="cft-tag-files">
             <span className="cm-formatting cm-formatting-hashtag cm-hashtag cm-hashtag-begin cm-meta">#</span>
-            <span className="cm-hashtag cm-hashtag-end cm-meta">{tag.substring(1)}</span>
+            <span className="cm-hashtag cm-hashtag-end cm-meta">{tag}</span>
             <span className="cft-info"> is in {files.length} file(s).</span>
 
             <div className="cft-files-container">
