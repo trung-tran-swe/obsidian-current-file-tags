@@ -19,7 +19,7 @@ export class MainView extends ItemView {
     root: Root | null = null;
     plugin: CurrentFileTagsPlugin;
     activeFile: TFile | null = null;
-    activeTags: string[] = [];
+    activeTags: string[] = [];  // tags without #
 
 
     constructor(leaf: WorkspaceLeaf, plugin: CurrentFileTagsPlugin) {
@@ -109,7 +109,7 @@ export class MainView extends ItemView {
         }
         if (cache) {
             // Get all unique tags for the active file
-            const tagsSet = new Set(cache?.tags?.map(a => a.tag));
+            const tagsSet = new Set(cache?.tags?.map(a => a.tag.substring(1)));
             // Get the frontmatter "tags"
             cache?.frontmatter?.tags.forEach((tag: string) => {
                 tagsSet.add(tag);
@@ -161,10 +161,10 @@ export class MainView extends ItemView {
 
     /**
      * Search for the tag using the Search plugin.
-     * @param tag The tag to search for.
+     * @param tag The tag to search for without the #.
      */
     searchTag(tag: string) {
-        const uri = `obsidian://search?query=tag:${encodeURIComponent(tag.substring(1))}`;
+        const uri = `obsidian://search?query=tag:${encodeURIComponent(tag)}`;
         const searchEl = document.createElement("a");
         searchEl.href = uri;
         document.body.appendChild(searchEl);

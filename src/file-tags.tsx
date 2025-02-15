@@ -7,7 +7,7 @@ import TagFiles from "./tag-files";
 /**
  * Render the tags belong to the file.
  * - param app The Obsidian App.
- * - param tags String array of tags (with #).
+ * - param tags String array of tags (without #).
  * - param onSearchTag Function to search for a specific tag.
  * @constructor
  */
@@ -22,7 +22,7 @@ function FileTags(
         onSearchTag: (tag: string) => void;
     }) {
 
-    // Holds the user's clicked upon tag
+    // Holds the user's clicked upon tag without the #
     const [selectedTag, setSelectedTag] = useState<string | null>(null);
     if (selectedTag && !tags.contains(selectedTag)) {
         // The selected tag is not one of the tags, so clear it.
