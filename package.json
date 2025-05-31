@@ -1,6 +1,6 @@
 {
 	"name": "obsidian-current-file-tags",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "View the editing file's tags with other associated files in Obsidian (https://obsidian.md)",
 	"main": "main.js",
 	"scripts": {

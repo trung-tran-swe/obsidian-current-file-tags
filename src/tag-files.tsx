@@ -37,7 +37,7 @@ function TagFiles(
         if (cache) {
             // Get all tags from cache and frontmatter.tags
             const tagsSet = new Set(cache?.tags?.map(a => a.tag.substring(1)));
-            cache?.frontmatter?.tags.forEach((tag: string) => {
+            cache?.frontmatter?.tags?.forEach((tag: string) => {
                 tagsSet.add(tag);
             })
             const tags = [...tagsSet];

@@ -1,7 +1,7 @@
 {
 	"id": "current-file-tags",
 	"name": "Current File Tags",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"minAppVersion": "1.7.0",
 	"description": "Display the active Markdown file's tags and associated files.",
 	"author": "Trung Tran",

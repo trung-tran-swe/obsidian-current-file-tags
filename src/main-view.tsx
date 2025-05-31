@@ -111,7 +111,7 @@ export class MainView extends ItemView {
             // Get all unique tags for the active file
             const tagsSet = new Set(cache?.tags?.map(a => a.tag.substring(1)));
             // Get the frontmatter "tags"
-            cache?.frontmatter?.tags.forEach((tag: string) => {
+            cache?.frontmatter?.tags?.forEach((tag: string) => {
                 tagsSet.add(tag);
             })
             newTags = [...tagsSet];
